@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "z+DKwYfPZmTmg5LkpcbwBADhMwEob7B8hROHdODIlXCsz6LIk9VG7TQAmaiqtmwVHJXGQmrX7hl3jfx+wACYaQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\HandwritingCompressor\\HandwritingCompressor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\magick.net-q16-anycpu\\14.0.0\\magick.net-q16-anycpu.14.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\magick.net.core\\14.0.0\\magick.net.core.14.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
