@@ -15,6 +15,7 @@ namespace HandwritingCompressor
         private readonly ImagesManager _imagesManager = new();
         public MainWindow()
         {
+            // TODO : Verify product key every app start
             InitializeComponent();
         }
 
