@@ -60,7 +60,8 @@
               "ToolTip": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\MainWindow.xaml",
               "RelativeToolTip": "HandwritingCompressor\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-07T15:18:49.192Z"
+              "WhenOpened": "2024-09-07T15:18:49.192Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -70,7 +71,7 @@
               "RelativeDocumentMoniker": "HandwritingCompressor\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\MainWindow.xaml.cs",
               "RelativeToolTip": "HandwritingCompressor\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAABEAAAA4AAAA",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAwwGAAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-07T15:17:44.209Z",
               "EditorCaption": ""
@@ -83,9 +84,10 @@
               "RelativeDocumentMoniker": "HandwritingCompressor\\Modules\\ImagesManager.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\Modules\\ImagesManager.cs",
               "RelativeToolTip": "HandwritingCompressor\\Modules\\ImagesManager.cs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAswFoAAABfAAAA",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAgwHgAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T15:17:32.05Z"
+              "WhenOpened": "2024-09-07T15:17:32.05Z",
+              "EditorCaption": ""
             }
           ]
         },

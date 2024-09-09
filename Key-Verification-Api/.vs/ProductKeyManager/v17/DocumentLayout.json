@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\ProductKeyManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1B776692-3D06-4C97-B97F-675BC8E3D2C6}|ProductKeyManager\\ProductKeyManager.csproj|c:\\users\\admin\\source\\repos\\productkeymanager\\productkeymanager\\controllers\\keyscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B776692-3D06-4C97-B97F-675BC8E3D2C6}|ProductKeyManager\\ProductKeyManager.csproj|solutionrelative:productkeymanager\\controllers\\keyscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\build\\Container.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B776692-3D06-4C97-B97F-675BC8E3D2C6}|ProductKeyManager\\ProductKeyManager.csproj|c:\\users\\admin\\source\\repos\\productkeymanager\\productkeymanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B776692-3D06-4C97-B97F-675BC8E3D2C6}|ProductKeyManager\\ProductKeyManager.csproj|solutionrelative:productkeymanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B776692-3D06-4C97-B97F-675BC8E3D2C6}|ProductKeyManager\\ProductKeyManager.csproj|c:\\users\\admin\\source\\repos\\productkeymanager\\productkeymanager\\modules\\productkeymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B776692-3D06-4C97-B97F-675BC8E3D2C6}|ProductKeyManager\\ProductKeyManager.csproj|solutionrelative:productkeymanager\\modules\\productkeymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B776692-3D06-4C97-B97F-675BC8E3D2C6}|ProductKeyManager\\ProductKeyManager.csproj|c:\\users\\admin\\source\\repos\\productkeymanager\\productkeymanager\\modules\\interfaces\\iproductkeymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B776692-3D06-4C97-B97F-675BC8E3D2C6}|ProductKeyManager\\ProductKeyManager.csproj|solutionrelative:productkeymanager\\modules\\interfaces\\iproductkeymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{dcc4ea97-1c0c-482b-b205-e541c0df9728}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{dcc4ea97-1c0c-482b-b205-e541c0df9728}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{dcc4ea97-1c0c-482b-b205-e541c0df9728}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Container.targets",
+              "DocumentMoniker": "C:\\Users\\Admin\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\build\\Container.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\build\\Container.targets",
+              "ToolTip": "C:\\Users\\Admin\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\build\\Container.targets",
+              "RelativeToolTip": "..\\..\\..\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\build\\Container.targets",
+              "ViewState": "AQIAAMQAAAAAAAAAAAAcwNYAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-09-05T09:12:13.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "KeysController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ProductKeyManager\\ProductKeyManager\\Controllers\\KeysController.cs",
+              "RelativeDocumentMoniker": "ProductKeyManager\\Controllers\\KeysController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ProductKeyManager\\ProductKeyManager\\Controllers\\KeysController.cs",
+              "RelativeToolTip": "ProductKeyManager\\Controllers\\KeysController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAuwBkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T09:06:40.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductKeyManager.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ProductKeyManager\\ProductKeyManager\\Modules\\ProductKeyManager.cs",
+              "RelativeDocumentMoniker": "ProductKeyManager\\Modules\\ProductKeyManager.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ProductKeyManager\\ProductKeyManager\\Modules\\ProductKeyManager.cs",
+              "RelativeToolTip": "ProductKeyManager\\Modules\\ProductKeyManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T09:05:52.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ProductKeyManager\\ProductKeyManager\\Program.cs",
+              "RelativeDocumentMoniker": "ProductKeyManager\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ProductKeyManager\\ProductKeyManager\\Program.cs",
+              "RelativeToolTip": "ProductKeyManager\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T09:05:14.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IProductKeyManager.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ProductKeyManager\\ProductKeyManager\\Modules\\Interfaces\\IProductKeyManager.cs",
+              "RelativeDocumentMoniker": "ProductKeyManager\\Modules\\Interfaces\\IProductKeyManager.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ProductKeyManager\\ProductKeyManager\\Modules\\Interfaces\\IProductKeyManager.cs",
+              "RelativeToolTip": "ProductKeyManager\\Modules\\Interfaces\\IProductKeyManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T09:02:30.36Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 544,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -87,18 +87,41 @@ namespace HandwritingsCompressor.Modules
         {
             if (!File.Exists(filePath))
                 throw new ArgumentException($"File doesn't exist (path:{filePath})");
-            if(!Directory.Exists(resultDirPath))
+            if (!Directory.Exists(resultDirPath))
                 throw new ArgumentException($"Directory doesn't exist (path:{resultDirPath})");
+            ExportFile(filePath, resultDirPath);
+        }
+
+        private void ExportFile(string filePath, string resultDirPath)
+        {
             try
             {
                 var img = GetInfo(filePath);
-                // TODO: add out file name generator
+                var resultFileName = GetNewFileName(filePath, resultDirPath);
                 MagickImage outImg = ItemToMagicImage(img);
-                outImg.Write(Path.Combine(resultDirPath, "img.tif"));
+                outImg.Write(resultFileName);
             }
             catch (Exception ex)
             {
+                // TODO: handle exception properly
                 MessageBox.Show($"Error occured during image processing. Details: {ex.Message}");
+            }
+        }
+
+        private string GetNewFileName(string filePath, string resultDirPath)
+        {
+            var fileInfo = new FileInfo(filePath);
+            var newPath = Path.Combine(resultDirPath, $"{fileInfo.Name}.tif");
+            if (!File.Exists(newPath))
+                return newPath;
+
+            int counter = 0;
+            while (true)
+            {
+                newPath = Path.Combine(resultDirPath, $"{fileInfo.Name}({counter}).tif");
+                if (!File.Exists(newPath))
+                    return newPath;
+                counter++;
             }
         }
 
@@ -115,18 +138,7 @@ namespace HandwritingsCompressor.Modules
                 throw new ArgumentException($"{resultDirPath} is not an existing directory");
 
             foreach (var img in _images)
-            {
-                try
-                {
-                    // TODO: add out file name generator
-                    MagickImage outImg = ItemToMagicImage(img);
-                    outImg.Write(Path.Combine(resultDirPath, "img.tif"));
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Error occured during image processing. Details: {ex.Message}");
-                }
-            }
+                ExportFile(img.Path, resultDirPath);
         }
 
         public string[] GetPaths() 

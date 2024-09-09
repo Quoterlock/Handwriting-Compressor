@@ -96,13 +96,9 @@ namespace HandwritingCompressor
             
             try
             {
-                string dir = "";
-                do
-                {
-                    dir = SelectDirectory();
-                }
-                while (string.IsNullOrEmpty(dir));
-
+                string dir = SelectDirectory();
+                if (string.IsNullOrEmpty(dir))
+                    return;
                 _imagesManager.ExportSelected(_selectedFilePath, dir);
                 MessageBox.Show("Saved");
             }
