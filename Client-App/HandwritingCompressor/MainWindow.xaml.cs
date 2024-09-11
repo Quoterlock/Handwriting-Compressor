@@ -1,4 +1,5 @@
-﻿using HandwritingsCompressor.Modules;
+﻿using HandwritingCompressor.Modules.Interfaces;
+using HandwritingsCompressor.Modules;
 using Microsoft.Win32;
 using System.IO;
 using System.Windows;
@@ -12,23 +13,14 @@ namespace HandwritingCompressor
     public partial class MainWindow : Window
     {
         private string _selectedFilePath = string.Empty;
-        private readonly ImagesManager _imagesManager = new();
-        private const long FILE_SIZE_LIMIT = 30000;
-        private bool _isDemo;
+        private readonly ImagesManager _imagesManager;
+        private readonly IProductKeyManager _keyManager;
 
-        public MainWindow(bool isDemo)
+        public MainWindow(ImagesManager imagesManager, IProductKeyManager keyManager)
         {
+            _imagesManager = imagesManager;
+            _keyManager = keyManager;
             InitializeComponent();
-            _isDemo = isDemo;
-            if (_isDemo)
-            {
-                exportAllBtn.Content += "*";
-                Title += "(Demo)";
-            } 
-            else
-            {
-                demoNotificationBar.Height = new GridLength(0);
-            }
         }
 
         private void UpdatePreview()
@@ -89,22 +81,6 @@ namespace HandwritingCompressor
                 openFileDialog.Filter = "Images (*.jpg, *.jpeg, *.png)|*.jpg;*.jpeg;*.png|All files (*.*)|*.*";
                 if (openFileDialog.ShowDialog() == true)
                 {
-                    if (_isDemo)
-                    {
-                        if (openFileDialog.FileNames.Length > 1)
-                        {
-                            MessageBox.Show("This is a paid functionality (One file at a time)!");
-                            return;
-                        }
-                        foreach (string file in openFileDialog.FileNames)
-                        {
-                            if (new FileInfo(file).Length > FILE_SIZE_LIMIT)
-                            {
-                                MessageBox.Show("This is a paid functionality (File size limit is 30Kb)!");
-                                return;
-                            }
-                        }
-                    }
                     _imagesManager.Add(openFileDialog.FileNames);
                     UpdateFilesList();
                 }
@@ -177,11 +153,6 @@ namespace HandwritingCompressor
                 MessageBox.Show("Add file first");
                 return;
             }
-            if(_imagesManager.GetPaths().Length > 1 && _isDemo)
-            {
-                MessageBox.Show("This is a paid function!");
-                return;
-            }
 
             try
             {
@@ -200,7 +171,7 @@ namespace HandwritingCompressor
 
         private void enterProductKeyBtn_Click(object sender, RoutedEventArgs e)
         {
-            var dialogWindow = new EnterProductKey();
+            var dialogWindow = new EnterProductKey(_keyManager);
             dialogWindow.ShowDialog();
         }
     }

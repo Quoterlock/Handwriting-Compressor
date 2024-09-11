@@ -70,3 +70,5 @@ C:\Users\Admin\source\git-repos\Handwriting-Compressor\Client-App\HandwritingCom
 C:\Users\Admin\source\git-repos\Handwriting-Compressor\Client-App\HandwritingCompressor\obj\Debug\net8.0-windows\ref\HandwritingCompressor.dll
 C:\Users\Admin\source\git-repos\Handwriting-Compressor\Client-App\HandwritingCompressor\obj\Debug\net8.0-windows\EnterProductKey.g.cs
 C:\Users\Admin\source\git-repos\Handwriting-Compressor\Client-App\HandwritingCompressor\obj\Debug\net8.0-windows\EnterProductKey.baml
+C:\Users\Admin\source\git-repos\Handwriting-Compressor\Client-App\HandwritingCompressor\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Admin\source\git-repos\Handwriting-Compressor\Client-App\HandwritingCompressor\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll

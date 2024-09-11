@@ -3,20 +3,21 @@ using System.Security.Cryptography.X509Certificates;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
+using HandwritingCompressor.Modules.Interfaces;
 
 namespace HandwritingsCompressor.Modules
 {
-    public class KeyValidator
+    public class WebKeyValidator : IKeyValidator
     {
         private string _baseUrl = "https://localhost:7032";
-        public bool Validate(string productKey)
+        public bool IsValid(string productKey)
         {
             try
             {
                 string publicKey = GetEncryptionKey();
                 var enctyptedKey = Encrypt(publicKey, productKey);
                 return VerifyOnServer(enctyptedKey);
-            } 
+            }
             catch (Exception)
             {
                 return false;
@@ -98,6 +99,7 @@ namespace HandwritingsCompressor.Modules
             }
             return false;
         }
+
     }
 
     class ValidationResult

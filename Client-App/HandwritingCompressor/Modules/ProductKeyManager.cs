@@ -1,11 +1,56 @@
-﻿using Microsoft.Win32;
+﻿using HandwritingCompressor.Modules.Interfaces;
+using HandwritingsCompressor.Exceptions;
+using Microsoft.Win32;
 using System.Text.Json;
 
 namespace HandwritingCompressor.Modules
 {
-    public class ProductKeyManager
+    public class ProductKeyManager : IProductKeyManager
     {
-        public static void Save(string productKey)
+        private readonly IKeyValidator _keyValidator;
+        private readonly ITextFileReader _fileReader;
+        private const string FILE_NAME = "license.bin";
+
+        private bool _isFirstTime = true;
+
+        public ProductKeyManager(IKeyValidator keyValidator, ITextFileReader fileReader)
+        {
+            _keyValidator = keyValidator;
+            _fileReader = fileReader;
+        }
+
+        public bool IsActivated()
+        {
+            bool isActivated = false;
+            var key = GetStoredKey();
+
+            if (!string.IsNullOrEmpty(key))
+            {
+                isActivated = _isFirstTime
+                    ? _keyValidator.IsValid(key) 
+                    : true;
+            }
+            if (isActivated) 
+                _isFirstTime = false;
+            return isActivated;
+        }
+
+        public void Activate(string key)
+        {
+            if (!_keyValidator.IsValid(key))
+                throw new InvalidProductKeyException(key);
+            try
+            {
+                Store(key);
+            } 
+            catch (Exception ex)
+            {
+                throw new Exception(
+                    $"Exception occured during product_key saving: {ex.Message}");
+            }
+        }
+
+        private void Store(string productKey)
         {
             var deviceIdObj = Registry.GetValue(
                 @"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography",
@@ -19,14 +64,15 @@ namespace HandwritingCompressor.Modules
             };
 
             var jsonString = JsonSerializer.Serialize(keyItem);
-            EncryptedFileReader.WriteToFile("productKey.json", jsonString);
+            _fileReader.Write(FILE_NAME, jsonString);
         }
 
-        public static string Get()
+        private string GetStoredKey()
         {
             try
             {
-                var jsonString = EncryptedFileReader.ReadFromFile("productKey.json");
+                var jsonString = _fileReader.Read(FILE_NAME);
+                
                 var item = JsonSerializer.Deserialize<ProductKeyItem>(jsonString);
 
                 if (item == null)

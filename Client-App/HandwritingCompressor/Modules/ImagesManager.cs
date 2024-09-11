@@ -1,14 +1,7 @@
-﻿using HandwritingsCompressor.Exceptions;
+﻿using HandwritingCompressor.Exceptions;
+using HandwritingCompressor.Modules.Interfaces;
 using ImageMagick;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.IO;
-using System.IO.Packaging;
-using System.Linq;
-using System.Security.AccessControl;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media.Imaging;
 
@@ -16,17 +9,18 @@ namespace HandwritingsCompressor.Modules
 {
     public class ImagesManager
     {
-        private List<StoredImage> _images = [];
+        private readonly List<StoredImage> _images = [];
+        private readonly IProductKeyManager _keyManager;
 
-        public ImagesManager() { }
+        public ImagesManager(IProductKeyManager keyManager) 
+        {
+            _keyManager = keyManager;
+        }
 
         public void Add(params string[] paths)
         {
-            if (paths.Length > 1)
-            {
-                // TODO:Verify user product key
-            }
-
+            if (paths.Length > 1 && !_keyManager.IsActivated())
+                throw new NotActivatedProductException();
 
             foreach (var path in paths)
             {
@@ -127,12 +121,8 @@ namespace HandwritingsCompressor.Modules
 
         public void Export(string resultDirPath)
         {
-            if (_images.Count > 1)
-            {
-                // TODO:Verify user product key
-                if (true)
-                    throw new InvalidProductKeyException("");
-            }
+            if (_images.Count > 1 && !_keyManager.IsActivated())
+                throw new NotActivatedProductException();
 
             if (!Directory.Exists(resultDirPath))
                 throw new ArgumentException($"{resultDirPath} is not an existing directory");

@@ -1,22 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using HandwritingCompressor.Modules.Interfaces;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HandwritingCompressor.Modules
 {
-    public class EncryptedFileReader
+    public class EncryptedFileReader : ITextFileReader
     {
-        public static string ReadFromFile(string path)
+        // AES 256 key
+        private const string ENCRYPTION_KEY = "cT+zGf8QXUklvskijxwMzirYsRhRFu1h6eXiIj24z64=";
+
+        public string Read(string path)
         {
             try
             {
                 if (File.Exists(path))
-                    return File.ReadAllText(path);
-                else
-                    return string.Empty;
+                {
+                    var content = File.ReadAllText(path);
+                    return SymmetricEncrypter.Decrypt(content, ENCRYPTION_KEY);
+                }
+                return string.Empty;
             }
             catch (Exception)
             {
@@ -24,11 +25,12 @@ namespace HandwritingCompressor.Modules
             }
         }
 
-        public static void WriteToFile(string path, string serializedContent)
+        public void Write(string path, string content)
         {
             try
             {
-                File.WriteAllText(path, serializedContent);
+                var enctyptedContent = SymmetricEncrypter.Encrypt(content, ENCRYPTION_KEY);
+                File.WriteAllText(path, enctyptedContent);
             }
             catch (Exception ex)
             {

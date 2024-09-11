@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "xJiJfyXVhMWnLWGm0RjkJO645KpNZBSnk6PGwOLD0cWt9njg/JDDkNlFHs9KtiZU0v47KTBPuehBoWHb8fQNcg==",
+  "dgSpecHash": "GnMdNbqbyPA+uJsDr7e5SzhI+xW1lGr/XRmNLrd4Gu8PH/2STI7r2fXwNSPOEVEZyKLYnSol0T2kjJkf56LFag==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\HandwritingCompressor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\magick.net-q16-anycpu\\14.0.0\\magick.net-q16-anycpu.14.0.0.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\magick.net.core\\14.0.0\\magick.net.core.14.0.0.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\magick.net.core\\14.0.0\\magick.net.core.14.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

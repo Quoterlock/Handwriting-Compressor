@@ -1,18 +1,7 @@
-﻿using HandwritingCompressor.Modules;
-using HandwritingsCompressor.Modules;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HandwritingCompressor.Modules.Interfaces;
+using HandwritingsCompressor.Exceptions;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+
 
 namespace HandwritingCompressor
 {
@@ -21,24 +10,33 @@ namespace HandwritingCompressor
     /// </summary>
     public partial class EnterProductKey : Window
     {
-        public EnterProductKey()
+        private readonly IProductKeyManager _keyManager;
+        public EnterProductKey(IProductKeyManager keyManager)
         {
+            _keyManager = keyManager;
             InitializeComponent();
         }
 
         private void activateBtn_Click(object sender, RoutedEventArgs e)
         {
             var productKey = productKeyTextBox.Text.Trim();
-            var keyValidator = new KeyValidator();
-            var isValid = keyValidator.Validate(productKey);
-            if(isValid)
-            {
-                ProductKeyManager.Save(productKey);
-                MessageBox.Show("Restart program after pressing Ok btn");
-                Application.Current.Shutdown();
+            if (string.IsNullOrEmpty(productKey))
                 return;
+            try // try to activate product
+            {
+                _keyManager.Activate(productKey);
+                this.Close();
+            } 
+            catch(InvalidProductKeyException ex)
+            {
+                MessageBox.Show(
+                    $"Product key \"{productKey}\" is not valid", 
+                    "Invalid key");
             }
-            MessageBox.Show($"Product key {productKey} is invalid");
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error occured");
+            }
         }
     }
 }

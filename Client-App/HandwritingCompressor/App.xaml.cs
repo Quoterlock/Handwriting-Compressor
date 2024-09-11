@@ -1,7 +1,7 @@
 ﻿using HandwritingCompressor.Modules;
+using HandwritingCompressor.Modules.Interfaces;
 using HandwritingsCompressor.Modules;
-using System.Configuration;
-using System.Data;
+using Microsoft.Extensions.DependencyInjection;
 using System.Windows;
 
 namespace HandwritingCompressor
@@ -11,28 +11,28 @@ namespace HandwritingCompressor
     /// </summary>
     public partial class App : Application
     {
+        public static IServiceProvider ServiceProvider { get; private set; }
+
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
 
-            var keyValidator = new KeyValidator();
-            //validate key
-            var key = ProductKeyManager.Get();
-            bool isDemo = true;
-            if(!string.IsNullOrEmpty(key))
-                isDemo = !keyValidator.Validate(key);
+            var serviceCollection = new ServiceCollection();
+            ConfigureServices(serviceCollection);
 
-            // Create an instance of your main window
-            MainWindow mainWindow = new MainWindow(isDemo);
-            //MainWindow mainWindow = new MainWindow(false);
+            ServiceProvider = serviceCollection.BuildServiceProvider();
 
-
-            // Optionally set properties on mainWindow before showing it
-            mainWindow.Title = "My Custom Main Window";
-
-            // Show the main window
+            var mainWindow = ServiceProvider.GetRequiredService<MainWindow>();
             mainWindow.Show();
         }
-    }
 
+        private void ConfigureServices(ServiceCollection serviceCollection)
+        {
+            serviceCollection.AddTransient<MainWindow>();
+            serviceCollection.AddSingleton<IKeyValidator, WebKeyValidator>();
+            serviceCollection.AddSingleton<ImagesManager>();
+            serviceCollection.AddScoped<ITextFileReader, EncryptedFileReader>();
+            serviceCollection.AddScoped<IProductKeyManager, ProductKeyManager>();
+        }
+    }
 }
