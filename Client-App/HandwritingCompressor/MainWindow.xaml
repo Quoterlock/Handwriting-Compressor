@@ -14,7 +14,15 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="24" x:Name="demoNotificationBar"/>
         </Grid.RowDefinitions>
+        <StackPanel Grid.Row="3" 
+                    Grid.ColumnSpan="2" 
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right">
+            <Label Content="You have a demo version. Enter the product key to get full access. -> "/>
+            <Button x:Name="enterProductKeyBtn" Click="enterProductKeyBtn_Click">Enter product key</Button>
+        </StackPanel>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>

@@ -68,3 +68,5 @@ C:\Users\Admin\source\git-repos\Handwriting-Compressor\Client-App\HandwritingCom
 C:\Users\Admin\source\git-repos\Handwriting-Compressor\Client-App\HandwritingCompressor\obj\Debug\net8.0-windows\HandwritingCompressor.pdb
 C:\Users\Admin\source\git-repos\Handwriting-Compressor\Client-App\HandwritingCompressor\obj\Debug\net8.0-windows\HandwritingCompressor.genruntimeconfig.cache
 C:\Users\Admin\source\git-repos\Handwriting-Compressor\Client-App\HandwritingCompressor\obj\Debug\net8.0-windows\ref\HandwritingCompressor.dll
+C:\Users\Admin\source\git-repos\Handwriting-Compressor\Client-App\HandwritingCompressor\obj\Debug\net8.0-windows\EnterProductKey.g.cs
+C:\Users\Admin\source\git-repos\Handwriting-Compressor\Client-App\HandwritingCompressor\obj\Debug\net8.0-windows\EnterProductKey.baml

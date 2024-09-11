@@ -523,11 +523,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\ProductKeyManager\\ProductKeyManager\\ProductKeyManager.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Key-Verification-Api\\ProductKeyManager\\ProductKeyManager.csproj",
       "projectName": "ProductKeyManager",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\ProductKeyManager\\ProductKeyManager\\ProductKeyManager.csproj",
+      "projectPath": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Key-Verification-Api\\ProductKeyManager\\ProductKeyManager.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\ProductKeyManager\\ProductKeyManager\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Key-Verification-Api\\ProductKeyManager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -593,7 +593,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

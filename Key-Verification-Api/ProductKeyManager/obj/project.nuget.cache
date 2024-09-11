@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fPipT2WuZ6nq3zhJTtWjepEQKopb0kIPld+RahABQlJwWu2X/viZZV6fRnQfGu/ZZnKPUWXFRplnqBVoYNF19w==",
+  "dgSpecHash": "8+8toJfQvaphXqkFvEQk6hBziPXc2mhZKxfyE6TrUqmoic7xSgEAmbjbPjusio14vtQZa/Onz7KU5c2JkV/1Vg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\ProductKeyManager\\ProductKeyManager\\ProductKeyManager.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Key-Verification-Api\\ProductKeyManager\\ProductKeyManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

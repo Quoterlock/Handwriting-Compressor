@@ -8,7 +8,7 @@ namespace HandwritingsCompressor.Modules
 {
     public class KeyValidator
     {
-        private string _baseUrl = string.Empty;
+        private string _baseUrl = "https://localhost:7032";
         public bool Validate(string productKey)
         {
             try
@@ -33,21 +33,45 @@ namespace HandwritingsCompressor.Modules
 
             string responseBody = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
 
+            EncryptionKey? result;
             if (!string.IsNullOrEmpty(responseBody))
-                return responseBody.ToString();
+            {
+                result = JsonSerializer.Deserialize<EncryptionKey>(responseBody);
+                if (result != null)
+                    return result.public_key;
+                else 
+                    return string.Empty;
+            }
             return string.Empty;
 
         }
 
         private string Encrypt(string key, string msg)
         {
-            byte[] messageBytes = Encoding.UTF8.GetBytes(msg);
+            // Convert the public key from base64 to byte array
+            byte[] publicKeyBytes = Convert.FromBase64String(key);
 
-            using (RSA rsa = RSA.Create())
+            using (var rsa = new RSACryptoServiceProvider(2048))
             {
-                rsa.ImportFromPem(key.ToCharArray());
-                byte[] encryptedBytes = rsa.Encrypt(messageBytes, RSAEncryptionPadding.OaepSHA256);
-                return Convert.ToBase64String(encryptedBytes);
+                try
+                {
+                    // Import the public key
+                    rsa.ImportCspBlob(publicKeyBytes);
+
+                    // Convert the message to a byte array
+                    byte[] messageBytes = Encoding.UTF8.GetBytes(msg);
+
+                    // Encrypt the message using the public key
+                    byte[] encryptedBytes = rsa.Encrypt(messageBytes, false);
+
+                    // Convert the encrypted bytes to base64 for easier transport
+                    return Convert.ToBase64String(encryptedBytes);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error during encryption: " + ex.Message);
+                    return string.Empty;
+                }
             }
         }
 
@@ -79,5 +103,9 @@ namespace HandwritingsCompressor.Modules
     class ValidationResult
     {
         public bool result { get; set; }
+    }
+    class EncryptionKey
+    {
+        public string public_key { get; set; }
     }
 }
