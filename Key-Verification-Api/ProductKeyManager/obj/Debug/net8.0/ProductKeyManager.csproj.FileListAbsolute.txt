@@ -63,3 +63,5 @@ C:\Users\Admin\source\git-repos\Handwriting-Compressor\Key-Verification-Api\Prod
 C:\Users\Admin\source\git-repos\Handwriting-Compressor\Key-Verification-Api\ProductKeyManager\obj\Debug\net8.0\ProductKeyManager.pdb
 C:\Users\Admin\source\git-repos\Handwriting-Compressor\Key-Verification-Api\ProductKeyManager\obj\Debug\net8.0\ProductKeyManager.genruntimeconfig.cache
 C:\Users\Admin\source\git-repos\Handwriting-Compressor\Key-Verification-Api\ProductKeyManager\obj\Debug\net8.0\ref\ProductKeyManager.dll
+C:\Users\Admin\source\git-repos\Handwriting-Compressor\Key-Verification-Api\ProductKeyManager\bin\Debug\net8.0\Konscious.Security.Cryptography.Argon2.dll
+C:\Users\Admin\source\git-repos\Handwriting-Compressor\Key-Verification-Api\ProductKeyManager\bin\Debug\net8.0\Konscious.Security.Cryptography.Blake2.dll

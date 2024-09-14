@@ -29,7 +29,7 @@ namespace HandwritingCompressor
         private void ConfigureServices(ServiceCollection serviceCollection)
         {
             serviceCollection.AddTransient<MainWindow>();
-            serviceCollection.AddSingleton<IKeyValidator, WebKeyValidator>();
+            serviceCollection.AddSingleton<IKeyValidator, WebProductKeyValidator>();
             serviceCollection.AddSingleton<ImagesManager>();
             serviceCollection.AddScoped<ITextFileReader, EncryptedFileReader>();
             serviceCollection.AddScoped<IProductKeyManager, ProductKeyManager>();

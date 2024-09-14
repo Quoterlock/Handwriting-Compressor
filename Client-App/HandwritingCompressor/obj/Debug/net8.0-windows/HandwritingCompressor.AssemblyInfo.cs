@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HandwritingCompressor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa27168a767933e788dc2b7ec58b513daa629fb2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c39ec440ee4879644f0ca80e5af9f6c1e1f9c272")]
 [assembly: System.Reflection.AssemblyProductAttribute("HandwritingCompressor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HandwritingCompressor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

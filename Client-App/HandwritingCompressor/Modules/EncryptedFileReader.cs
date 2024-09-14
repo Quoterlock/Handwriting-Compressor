@@ -5,8 +5,11 @@ namespace HandwritingCompressor.Modules
 {
     public class EncryptedFileReader : ITextFileReader
     {
-        // AES 256 key
-        private const string ENCRYPTION_KEY = "cT+zGf8QXUklvskijxwMzirYsRhRFu1h6eXiIj24z64=";
+        private readonly string _key;
+        public EncryptedFileReader(IKeyStorage keys) 
+        {
+            _key = keys.Retreive("handwriting_app_kek"); 
+        }
 
         public string Read(string path)
         {
@@ -15,7 +18,7 @@ namespace HandwritingCompressor.Modules
                 if (File.Exists(path))
                 {
                     var content = File.ReadAllText(path);
-                    return SymmetricEncrypter.Decrypt(content, ENCRYPTION_KEY);
+                    return SymmetricEncrypter.Decrypt(content, _key);
                 }
                 return string.Empty;
             }
@@ -29,7 +32,7 @@ namespace HandwritingCompressor.Modules
         {
             try
             {
-                var enctyptedContent = SymmetricEncrypter.Encrypt(content, ENCRYPTION_KEY);
+                var enctyptedContent = SymmetricEncrypter.Encrypt(content, _key);
                 File.WriteAllText(path, enctyptedContent);
             }
             catch (Exception ex)

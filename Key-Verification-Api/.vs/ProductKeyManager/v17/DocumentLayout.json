@@ -3,19 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Key-Verification-Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B776692-3D06-4C97-B97F-675BC8E3D2C6}|ProductKeyManager\\ProductKeyManager.csproj|c:\\users\\admin\\source\\git-repos\\handwriting-compressor\\key-verification-api\\productkeymanager\\controllers\\keyscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B776692-3D06-4C97-B97F-675BC8E3D2C6}|ProductKeyManager\\ProductKeyManager.csproj|solutionrelative:productkeymanager\\controllers\\keyscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B776692-3D06-4C97-B97F-675BC8E3D2C6}|ProductKeyManager\\ProductKeyManager.csproj|c:\\users\\admin\\source\\git-repos\\handwriting-compressor\\key-verification-api\\productkeymanager\\controllers\\productkeyscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B776692-3D06-4C97-B97F-675BC8E3D2C6}|ProductKeyManager\\ProductKeyManager.csproj|solutionrelative:productkeymanager\\controllers\\productkeyscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\build\\Container.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B776692-3D06-4C97-B97F-675BC8E3D2C6}|ProductKeyManager\\ProductKeyManager.csproj|c:\\users\\admin\\source\\git-repos\\handwriting-compressor\\key-verification-api\\productkeymanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B776692-3D06-4C97-B97F-675BC8E3D2C6}|ProductKeyManager\\ProductKeyManager.csproj|solutionrelative:productkeymanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1B776692-3D06-4C97-B97F-675BC8E3D2C6}|ProductKeyManager\\ProductKeyManager.csproj|c:\\users\\admin\\source\\git-repos\\handwriting-compressor\\key-verification-api\\productkeymanager\\modules\\productkeymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B776692-3D06-4C97-B97F-675BC8E3D2C6}|ProductKeyManager\\ProductKeyManager.csproj|solutionrelative:productkeymanager\\modules\\productkeymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B776692-3D06-4C97-B97F-675BC8E3D2C6}|ProductKeyManager\\ProductKeyManager.csproj|c:\\users\\admin\\source\\git-repos\\handwriting-compressor\\key-verification-api\\productkeymanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B776692-3D06-4C97-B97F-675BC8E3D2C6}|ProductKeyManager\\ProductKeyManager.csproj|solutionrelative:productkeymanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B776692-3D06-4C97-B97F-675BC8E3D2C6}|ProductKeyManager\\ProductKeyManager.csproj|c:\\users\\admin\\source\\git-repos\\handwriting-compressor\\key-verification-api\\productkeymanager\\modules\\interfaces\\iproductkeymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,44 +53,47 @@
               "RelativeToolTip": "..\\..\\..\\..\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\build\\Container.targets",
               "ViewState": "AQIAAMQAAAAAAAAAAAAcwNYAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-09-05T09:12:13.654Z"
+              "WhenOpened": "2024-09-05T09:12:13.654Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "KeysController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Key-Verification-Api\\ProductKeyManager\\Controllers\\KeysController.cs",
-              "RelativeDocumentMoniker": "ProductKeyManager\\Controllers\\KeysController.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Key-Verification-Api\\ProductKeyManager\\Controllers\\KeysController.cs",
-              "RelativeToolTip": "ProductKeyManager\\Controllers\\KeysController.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAEwBMAAAANAAAA",
+              "Title": "ProductKeysController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Key-Verification-Api\\ProductKeyManager\\Controllers\\ProductKeysController.cs",
+              "RelativeDocumentMoniker": "ProductKeyManager\\Controllers\\ProductKeysController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Key-Verification-Api\\ProductKeyManager\\Controllers\\ProductKeysController.cs",
+              "RelativeToolTip": "ProductKeyManager\\Controllers\\ProductKeysController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-05T09:06:40.456Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ProductKeyManager.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Key-Verification-Api\\ProductKeyManager\\Modules\\ProductKeyManager.cs",
               "RelativeDocumentMoniker": "ProductKeyManager\\Modules\\ProductKeyManager.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Key-Verification-Api\\ProductKeyManager\\Modules\\ProductKeyManager.cs",
               "RelativeToolTip": "ProductKeyManager\\Modules\\ProductKeyManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAeAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwA4AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T09:05:52.606Z"
+              "WhenOpened": "2024-09-05T09:05:52.606Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Key-Verification-Api\\ProductKeyManager\\Program.cs",
               "RelativeDocumentMoniker": "ProductKeyManager\\Program.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Key-Verification-Api\\ProductKeyManager\\Program.cs",
               "RelativeToolTip": "ProductKeyManager\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T09:05:14.714Z"
+              "WhenOpened": "2024-09-05T09:05:14.714Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -100,9 +103,10 @@
               "RelativeDocumentMoniker": "ProductKeyManager\\Modules\\Interfaces\\IProductKeyManager.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Key-Verification-Api\\ProductKeyManager\\Modules\\Interfaces\\IProductKeyManager.cs",
               "RelativeToolTip": "ProductKeyManager\\Modules\\Interfaces\\IProductKeyManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAbAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T09:02:30.36Z"
+              "WhenOpened": "2024-09-05T09:02:30.36Z",
+              "EditorCaption": ""
             }
           ]
         },
