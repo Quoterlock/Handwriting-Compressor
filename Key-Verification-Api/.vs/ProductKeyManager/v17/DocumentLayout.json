@@ -53,8 +53,7 @@
               "RelativeToolTip": "..\\..\\..\\..\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\build\\Container.targets",
               "ViewState": "AQIAAMQAAAAAAAAAAAAcwNYAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-09-05T09:12:13.654Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-05T09:12:13.654Z"
             },
             {
               "$type": "Document",
@@ -64,7 +63,7 @@
               "RelativeDocumentMoniker": "ProductKeyManager\\Controllers\\ProductKeysController.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Key-Verification-Api\\ProductKeyManager\\Controllers\\ProductKeysController.cs",
               "RelativeToolTip": "ProductKeyManager\\Controllers\\ProductKeysController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABNAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-05T09:06:40.456Z",
               "EditorCaption": ""
@@ -79,8 +78,7 @@
               "RelativeToolTip": "ProductKeyManager\\Modules\\ProductKeyManager.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAAwA4AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T09:05:52.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-05T09:05:52.606Z"
             },
             {
               "$type": "Document",
@@ -92,8 +90,7 @@
               "RelativeToolTip": "ProductKeyManager\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T09:05:14.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-05T09:05:14.714Z"
             },
             {
               "$type": "Document",
@@ -105,8 +102,7 @@
               "RelativeToolTip": "ProductKeyManager\\Modules\\Interfaces\\IProductKeyManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T09:02:30.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-05T09:02:30.36Z"
             }
           ]
         },

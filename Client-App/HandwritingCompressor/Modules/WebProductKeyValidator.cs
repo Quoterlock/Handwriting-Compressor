@@ -1,4 +1,5 @@
 ﻿using System.Net.Http;
+using System.Text;
 using System.Text.Json;
 using HandwritingCompressor.Modules.Interfaces;
 
@@ -22,14 +23,20 @@ namespace HandwritingsCompressor.Modules
             }
         }
 
-        private bool VerifyOnServer(string enctryptedKey)
+        private bool VerifyOnServer(string productKey)
         {
             HttpClient client = new HttpClient();
             try
             {
-                string url = $"{_baseUrl}/verify?key={enctryptedKey}";
+                string url = $"{_baseUrl}/verify";
+                
+                var body = new { value = productKey };
+                var json = JsonSerializer.Serialize(body);
+                var content = new StringContent(json,
+                    Encoding.UTF8, 
+                    "application/json");
 
-                HttpResponseMessage response = client.GetAsync(url).GetAwaiter().GetResult();
+                HttpResponseMessage response = client.PostAsync(url, content).GetAwaiter().GetResult();
                 response.EnsureSuccessStatusCode();
 
                 string responseBody = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();

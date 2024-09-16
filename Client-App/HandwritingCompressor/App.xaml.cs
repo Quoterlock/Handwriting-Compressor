@@ -17,11 +17,11 @@ namespace HandwritingCompressor
         {
             base.OnStartup(e);
 
+            // services configuration
             var serviceCollection = new ServiceCollection();
             ConfigureServices(serviceCollection);
-
             ServiceProvider = serviceCollection.BuildServiceProvider();
-
+            // open main window
             var mainWindow = ServiceProvider.GetRequiredService<MainWindow>();
             mainWindow.Show();
         }
@@ -33,6 +33,7 @@ namespace HandwritingCompressor
             serviceCollection.AddSingleton<ImagesManager>();
             serviceCollection.AddScoped<ITextFileReader, EncryptedFileReader>();
             serviceCollection.AddScoped<IProductKeyManager, ProductKeyManager>();
+            serviceCollection.AddScoped<IKeysStorage, EncryptionKeysStorage>();
         }
     }
 }

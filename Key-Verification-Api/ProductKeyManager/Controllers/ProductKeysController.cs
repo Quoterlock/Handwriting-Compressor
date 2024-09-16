@@ -11,7 +11,7 @@ namespace ProductKeyManagerApp.Controllers
             _keyManager = keyManager;
         }
 
-        [HttpGet("verify")]
+        [HttpPost("verify")]
         public IActionResult VerifyUserKey([FromBody] UserKey key)
         {
             try

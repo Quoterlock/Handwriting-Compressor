@@ -10,7 +10,10 @@ namespace HandwritingCompressor
     /// </summary>
     public partial class EnterProductKey : Window
     {
+        
         private readonly IProductKeyManager _keyManager;
+
+        public bool IsActivated { get; set; }
         public EnterProductKey(IProductKeyManager keyManager)
         {
             _keyManager = keyManager;
@@ -25,6 +28,7 @@ namespace HandwritingCompressor
             try // try to activate product
             {
                 _keyManager.Activate(productKey);
+                IsActivated = true;
                 this.Close();
             } 
             catch(InvalidProductKeyException ex)

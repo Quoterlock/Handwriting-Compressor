@@ -1,14 +1,21 @@
 ﻿using HandwritingCompressor.Modules.Interfaces;
 using System.IO;
+using System.Security.Cryptography;
 
 namespace HandwritingCompressor.Modules
 {
     public class EncryptedFileReader : ITextFileReader
     {
-        private readonly string _key;
-        public EncryptedFileReader(IKeyStorage keys) 
+        private readonly string _key = string.Empty;
+        public EncryptedFileReader(IKeysStorage keys) 
         {
-            _key = keys.Retreive("handwriting_app_kek"); 
+            string name = "handwriting-app-data-encryption-key";
+            while (string.IsNullOrEmpty(_key))
+            {
+                _key = keys.Retreive(name);
+                if (string.IsNullOrEmpty(_key))
+                    keys.Store(name, KeyGenerator.Generate(32));
+            }
         }
 
         public string Read(string path)
@@ -20,12 +27,13 @@ namespace HandwritingCompressor.Modules
                     var content = File.ReadAllText(path);
                     return SymmetricEncrypter.Decrypt(content, _key);
                 }
-                return string.Empty;
             }
-            catch (Exception)
+            catch (CryptographicException ex)
             {
-                return string.Empty;
+                File.Delete(path);
             }
+            catch (Exception) { }
+            return string.Empty;
         }
 
         public void Write(string path, string content)

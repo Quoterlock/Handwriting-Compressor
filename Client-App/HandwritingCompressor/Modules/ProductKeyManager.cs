@@ -11,8 +11,6 @@ namespace HandwritingCompressor.Modules
         private readonly ITextFileReader _fileReader;
         private const string FILE_NAME = "license.bin";
 
-        private bool _isFirstTime = true;
-
         public ProductKeyManager(IKeyValidator keyValidator, ITextFileReader fileReader)
         {
             _keyValidator = keyValidator;
@@ -23,15 +21,10 @@ namespace HandwritingCompressor.Modules
         {
             bool isActivated = false;
             var key = GetStoredKey();
-
+         
             if (!string.IsNullOrEmpty(key))
-            {
-                isActivated = _isFirstTime
-                    ? _keyValidator.IsValid(key) 
-                    : true;
-            }
-            if (isActivated) 
-                _isFirstTime = false;
+                isActivated = _keyValidator.IsValid(key);
+            
             return isActivated;
         }
 
@@ -71,8 +64,7 @@ namespace HandwritingCompressor.Modules
         {
             try
             {
-                var jsonString = _fileReader.Read(FILE_NAME);
-                
+                var jsonString = _fileReader.Read(FILE_NAME);                
                 var item = JsonSerializer.Deserialize<ProductKeyItem>(jsonString);
 
                 if (item == null)

@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7913391B-3545-4C72-BA4C-67198E29B20F}|HandwritingCompressor\\HandwritingCompressor.csproj|c:\\users\\admin\\source\\git-repos\\handwriting-compressor\\client-app\\handwritingcompressor\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7913391B-3545-4C72-BA4C-67198E29B20F}|HandwritingCompressor\\HandwritingCompressor.csproj|solutionrelative:handwritingcompressor\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7913391B-3545-4C72-BA4C-67198E29B20F}|HandwritingCompressor\\HandwritingCompressor.csproj|c:\\users\\admin\\source\\git-repos\\handwriting-compressor\\client-app\\handwritingcompressor\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7913391B-3545-4C72-BA4C-67198E29B20F}|HandwritingCompressor\\HandwritingCompressor.csproj|solutionrelative:handwritingcompressor\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7913391B-3545-4C72-BA4C-67198E29B20F}|HandwritingCompressor\\HandwritingCompressor.csproj|c:\\users\\admin\\source\\git-repos\\handwriting-compressor\\client-app\\handwritingcompressor\\modules\\productkeymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7913391B-3545-4C72-BA4C-67198E29B20F}|HandwritingCompressor\\HandwritingCompressor.csproj|solutionrelative:handwritingcompressor\\modules\\productkeymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7913391B-3545-4C72-BA4C-67198E29B20F}|HandwritingCompressor\\HandwritingCompressor.csproj|c:\\users\\admin\\source\\git-repos\\handwriting-compressor\\client-app\\handwritingcompressor\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7913391B-3545-4C72-BA4C-67198E29B20F}|HandwritingCompressor\\HandwritingCompressor.csproj|solutionrelative:handwritingcompressor\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7913391B-3545-4C72-BA4C-67198E29B20F}|HandwritingCompressor\\HandwritingCompressor.csproj|c:\\users\\admin\\source\\git-repos\\handwriting-compressor\\client-app\\handwritingcompressor\\enterproductkey.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7913391B-3545-4C72-BA4C-67198E29B20F}|HandwritingCompressor\\HandwritingCompressor.csproj|solutionrelative:handwritingcompressor\\enterproductkey.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7913391B-3545-4C72-BA4C-67198E29B20F}|HandwritingCompressor\\HandwritingCompressor.csproj|c:\\users\\admin\\source\\git-repos\\handwriting-compressor\\client-app\\handwritingcompressor\\modules\\webproductkeyvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7913391B-3545-4C72-BA4C-67198E29B20F}|HandwritingCompressor\\HandwritingCompressor.csproj|solutionrelative:handwritingcompressor\\modules\\webproductkeyvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,8 +31,20 @@
       "RelativeMoniker": "D:0:0:{7913391B-3545-4C72-BA4C-67198E29B20F}|HandwritingCompressor\\HandwritingCompressor.csproj|solutionrelative:handwritingcompressor\\modules\\encryptedfilereader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7913391B-3545-4C72-BA4C-67198E29B20F}|HandwritingCompressor\\HandwritingCompressor.csproj|c:\\users\\admin\\source\\git-repos\\handwriting-compressor\\client-app\\handwritingcompressor\\modules\\interfaces\\ikeystorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7913391B-3545-4C72-BA4C-67198E29B20F}|HandwritingCompressor\\HandwritingCompressor.csproj|solutionrelative:handwritingcompressor\\modules\\interfaces\\ikeystorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7913391B-3545-4C72-BA4C-67198E29B20F}|HandwritingCompressor\\HandwritingCompressor.csproj|c:\\users\\admin\\source\\git-repos\\handwriting-compressor\\client-app\\handwritingcompressor\\modules\\encryptionkeysstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7913391B-3545-4C72-BA4C-67198E29B20F}|HandwritingCompressor\\HandwritingCompressor.csproj|solutionrelative:handwritingcompressor\\modules\\encryptionkeysstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7913391B-3545-4C72-BA4C-67198E29B20F}|HandwritingCompressor\\HandwritingCompressor.csproj|c:\\users\\admin\\source\\git-repos\\handwriting-compressor\\client-app\\handwritingcompressor\\modules\\interfaces\\ikeysstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7913391B-3545-4C72-BA4C-67198E29B20F}|HandwritingCompressor\\HandwritingCompressor.csproj|solutionrelative:handwritingcompressor\\modules\\interfaces\\ikeysstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7913391B-3545-4C72-BA4C-67198E29B20F}|HandwritingCompressor\\HandwritingCompressor.csproj|c:\\users\\admin\\source\\git-repos\\handwriting-compressor\\client-app\\handwritingcompressor\\modules\\symmetricencrypter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7913391B-3545-4C72-BA4C-67198E29B20F}|HandwritingCompressor\\HandwritingCompressor.csproj|solutionrelative:handwritingcompressor\\modules\\symmetricencrypter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7913391B-3545-4C72-BA4C-67198E29B20F}|HandwritingCompressor\\HandwritingCompressor.csproj|c:\\users\\admin\\source\\git-repos\\handwriting-compressor\\client-app\\handwritingcompressor\\modules\\interfaces\\ikeyvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7913391B-3545-4C72-BA4C-67198E29B20F}|HandwritingCompressor\\HandwritingCompressor.csproj|solutionrelative:handwritingcompressor\\modules\\interfaces\\ikeyvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,41 +70,144 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "HandwritingCompressor\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\MainWindow.xaml",
+              "RelativeToolTip": "HandwritingCompressor\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-16T15:49:16.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HandwritingCompressor\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\MainWindow.xaml.cs",
+              "RelativeToolTip": "HandwritingCompressor\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAwwH4AAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T14:31:48.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\App.xaml.cs",
+              "RelativeDocumentMoniker": "HandwritingCompressor\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\App.xaml.cs",
+              "RelativeToolTip": "HandwritingCompressor\\App.xaml.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBkAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T14:28:35.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WebProductKeyValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\Modules\\WebProductKeyValidator.cs",
+              "RelativeDocumentMoniker": "HandwritingCompressor\\Modules\\WebProductKeyValidator.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\Modules\\WebProductKeyValidator.cs",
+              "RelativeToolTip": "HandwritingCompressor\\Modules\\WebProductKeyValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T08:11:29.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IKeyStorage.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\Modules\\Interfaces\\IKeyStorage.cs",
-              "RelativeDocumentMoniker": "HandwritingCompressor\\Modules\\Interfaces\\IKeyStorage.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\Modules\\Interfaces\\IKeyStorage.cs",
-              "RelativeToolTip": "HandwritingCompressor\\Modules\\Interfaces\\IKeyStorage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAPAAAA",
+              "Title": "ProductKeyManager.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\Modules\\ProductKeyManager.cs",
+              "RelativeDocumentMoniker": "HandwritingCompressor\\Modules\\ProductKeyManager.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\Modules\\ProductKeyManager.cs",
+              "RelativeToolTip": "HandwritingCompressor\\Modules\\ProductKeyManager.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAlwCAAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T15:19:32.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EnterProductKey.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\EnterProductKey.xaml.cs",
+              "RelativeDocumentMoniker": "HandwritingCompressor\\EnterProductKey.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\EnterProductKey.xaml.cs",
+              "RelativeToolTip": "HandwritingCompressor\\EnterProductKey.xaml.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwB4AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T15:26:50.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EncryptionKeysStorage.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\Modules\\EncryptionKeysStorage.cs",
+              "RelativeDocumentMoniker": "HandwritingCompressor\\Modules\\EncryptionKeysStorage.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\Modules\\EncryptionKeysStorage.cs",
+              "RelativeToolTip": "HandwritingCompressor\\Modules\\EncryptionKeysStorage.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAtwB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T14:20:50.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IKeyValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\Modules\\Interfaces\\IKeyValidator.cs",
+              "RelativeDocumentMoniker": "HandwritingCompressor\\Modules\\Interfaces\\IKeyValidator.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\Modules\\Interfaces\\IKeyValidator.cs",
+              "RelativeToolTip": "HandwritingCompressor\\Modules\\Interfaces\\IKeyValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T14:19:59.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IKeysStorage.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\Modules\\Interfaces\\IKeysStorage.cs",
+              "RelativeDocumentMoniker": "HandwritingCompressor\\Modules\\Interfaces\\IKeysStorage.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\Modules\\Interfaces\\IKeysStorage.cs",
+              "RelativeToolTip": "HandwritingCompressor\\Modules\\Interfaces\\IKeysStorage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-14T08:30:57.049Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
+              "Title": "SymmetricEncrypter.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\Modules\\SymmetricEncrypter.cs",
+              "RelativeDocumentMoniker": "HandwritingCompressor\\Modules\\SymmetricEncrypter.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\Modules\\SymmetricEncrypter.cs",
+              "RelativeToolTip": "HandwritingCompressor\\Modules\\SymmetricEncrypter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T14:43:36.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "EncryptedFileReader.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\Modules\\EncryptedFileReader.cs",
               "RelativeDocumentMoniker": "HandwritingCompressor\\Modules\\EncryptedFileReader.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\Modules\\EncryptedFileReader.cs",
               "RelativeToolTip": "HandwritingCompressor\\Modules\\EncryptedFileReader.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAANAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwCQAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-14T08:13:35.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WebProductKeyValidator.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\Modules\\WebProductKeyValidator.cs",
-              "RelativeDocumentMoniker": "HandwritingCompressor\\Modules\\WebProductKeyValidator.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\git-repos\\Handwriting-Compressor\\Client-App\\HandwritingCompressor\\Modules\\WebProductKeyValidator.cs",
-              "RelativeToolTip": "HandwritingCompressor\\Modules\\WebProductKeyValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T08:11:29.382Z",
               "EditorCaption": ""
             }
           ]

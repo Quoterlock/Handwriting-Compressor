@@ -1,7 +1,7 @@
-﻿using HandwritingCompressor.Modules.Interfaces;
+﻿using HandwritingCompressor.Exceptions;
+using HandwritingCompressor.Modules.Interfaces;
 using HandwritingsCompressor.Modules;
 using Microsoft.Win32;
-using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -15,12 +15,40 @@ namespace HandwritingCompressor
         private string _selectedFilePath = string.Empty;
         private readonly ImagesManager _imagesManager;
         private readonly IProductKeyManager _keyManager;
+        private bool _isActivated;
 
         public MainWindow(ImagesManager imagesManager, IProductKeyManager keyManager)
         {
             _imagesManager = imagesManager;
             _keyManager = keyManager;
             InitializeComponent();
+            IsActivated = _keyManager.IsActivated();
+        }
+
+        public bool IsActivated
+        {
+            get { return _isActivated; }
+            set
+            {
+                _isActivated = value;
+                UpdateDemoLayout(value);
+            }
+        }
+
+        private void UpdateDemoLayout(bool value)
+        {
+            if (value)
+            {
+                demoNotificationBar.Height = new GridLength(0);
+                exportAllBtn.IsEnabled = true;
+                this.Title = "Handwriting Compressor";
+            }
+            else
+            {
+                demoNotificationBar.Height = new GridLength(24);
+                exportAllBtn.IsEnabled = false;
+                this.Title = "Handwriting Compressor (Demo)";
+            }
         }
 
         private void UpdatePreview()
@@ -85,6 +113,11 @@ namespace HandwritingCompressor
                     UpdateFilesList();
                 }
             }
+            catch (NotActivatedProductException ex)
+            {
+                MessageBox.Show($"Activate to work with multiple files or files larger than 1MB.", "Activation");
+
+            }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error occured during opening: {ex}");
@@ -106,6 +139,11 @@ namespace HandwritingCompressor
                     return;
                 _imagesManager.ExportSelected(_selectedFilePath, dir);
                 MessageBox.Show("Saved");
+            }
+            catch (NotActivatedProductException ex)
+            {
+                MessageBox.Show($"Activate to work with multiple files or files larger than 1MB.", "Activation");
+
             }
             catch (Exception ex)
             {
@@ -173,6 +211,7 @@ namespace HandwritingCompressor
         {
             var dialogWindow = new EnterProductKey(_keyManager);
             dialogWindow.ShowDialog();
+            IsActivated = dialogWindow.IsActivated;
         }
     }
 }

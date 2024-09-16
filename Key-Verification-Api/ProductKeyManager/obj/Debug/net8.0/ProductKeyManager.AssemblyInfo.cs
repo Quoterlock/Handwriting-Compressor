@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProductKeyManager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c39ec440ee4879644f0ca80e5af9f6c1e1f9c272")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be06cb6022ed7d2dbe5b7d39eba8baabc8096ff8")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProductKeyManager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProductKeyManager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
